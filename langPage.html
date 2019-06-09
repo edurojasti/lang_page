@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>One Page - Parallax</title>
+    <link rel="stylesheet" type="text/css" href="css/styless.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+</head>
+<body>
+    <header>
+        <h1>Layout de One page</h1>
+    </header>
+    
+    <main>
+        <!--Botoes de navegação-->
+        <nav>
+            <div class="menu"><i class="material-icons">&#xE145;</i></div>
+            <div class="nav-itens"><!--Botoes-->
+               <!--Chamada do id #topo-->
+               <a href="#topo" class="tooltip" data-tooltip="topo fixo">
+                    <i class="material-icons">&#xE30C;</i>
+                    <label class="txt_tooltip"></label>
+               </a>
+
+               <!--Chamada do id #botão-->
+               <a href="#botao" class="tooltip" data-tooltip="botão">
+                    <i class="material-icons">&#xE30F;</i>
+                    <label class="txt_tooltip"></label>
+               </a>
+
+               <!--Chamada do id #tooltips-->
+               <a href="#tooltip" class="tooltip" data-tooltip="tooltips">
+                    <i class="material-icons">&#xE0CB;</i>
+                    <label class="txt_tooltip"></label>
+               </a>
+
+               <!--Chamada do id #parallax-->
+               <a href="#parallax" class="tooltip" data-tooltip="parallax">
+                    <i class="material-icons">&#xE6DD;</i>
+                    <label class="txt_tooltip"></label>
+               </a>
+            </div>
+        </nav>
+
+        <!--Seções (conteudos)-->
+        <section>
+            <div id="topo" class="secao_info"><!--Seção de informação-->
+                <div class="row container">
+                    <h3 class="headers">Topo fixo</h3>
+                    <p>
+                        Lorem Ipsum é um texto modelo da indústria tipográfica e de impressсo. O Lorem Ipsum tem vindo a ser o texto padrão usado por estas indústrias desde o ano de 1500, quando uma misturou os caracteres de um texto para criar um espécime de livro. Este texto não só sobreviveu 5 séculos, mas 
+                        também o salto para a tipografia electrónica, mantendo-se essencialmente inalterada.
+                    </p>
+                </div>                
+            </div>
+
+            <div class="containerParallax"><!--Imagem-->
+                <div class="imgParallax">
+                    <img src="img/img1.jpg" alt="img1">
+                </div>
+            </div>
+        </section>
+
+         <section>
+            <div id="botao" class="secao_info"><!--Seção de informação-->
+                <div class="row container">
+                    <h3 class="headers">Botões</h3>
+                    <p>
+                        Existem muitas variações das passagens modelo da indústria tipográfica e de impressсo. 
+                        O Lorem Ipsum tem vindo a ser o texto padrão usado por estas indústrias desde o ano de 1500, quando uma misturou os caracteres de um texto para criar um espécime de livro. Este texto não só sobreviveu 5 séculos, mas também o salto para a tipografia electrónica, mantendo-se essencialmente inalterada. Foi popularizada nos anos 60 com a disponibilização das folhas de Letraset, que continham passagens com Lorem Ipsum, 
+                        e mais recentemente com os programas de 
+                        publicação como o Aldus PageMaker que incluem versões do Lorem Ipsum
+                    </p>
+                </div>
+            </div>
+            <div class="containerParallax"><!--Imagem-->
+                <div class="imgParallax">
+                    <img src="img/img2.jpg" alt="img2">
+                </div>
+            </div>
+        </section>
+
+         <section>
+            <div id="tooltip" class="secao_info"><!--Seção de informação-->
+                <div class="row container">
+                    <h3 class="headers">Tooltips</h3>
+                    <p>
+                            Existem muitas variações das passagens modelo da indústria tipográfica e de impressсo. O Lorem Ipsum tem vindo a ser o texto padrão usado por estas indústrias desde o ano de 1500, quando uma misturou os caracteres de um texto para criar um espécime de livro. Este texto não só sobreviveu 5 séculos, mas também o salto para a tipografia electrónica, mantendo-se essencialmente inalterada. Foi popularizada nos anos 60 com a disponibilização das folhas de Letraset, que continham passagens com Lorem Ipsum, e mais recentemente com os programas de publicação como o Aldus PageMaker que incluem versões do Lorem Ipsum
+                        Lorem Ipsum é um texto modelo da indústria tipográfica e de impressсo. O Lorem Ipsum tem vindo a ser o texto padrão usado por estas indústrias desde o ano de 1500, quando uma misturou os caracteres de um texto para criar um espécime de livro. Este texto não só sobreviveu 5 séculos, mas 
+                        também o salto para a tipografia electrónica, mantendo-se essencialmente inalterada.
+                    </p>
+                </div>
+            </div> 
+            <div class="containerParallax"><!--Imagem-->
+                <div class="imgParallax">
+                    <img src="img/img3.jpg" alt="img3">
+                </div>
+            </div>            
+        </section>
+
+         <section>
+            <div id="parallax" class="secao_info"><!--Seção de informação-->
+                <div class="row container">
+                    <h3 class="headers">Efeito parallax</h3>
+                    <p>
+                        Impressсo. O Lorem Ipsum tem vindo a ser o texto padrão usado por estas indústrias desde o ano de 1500, quando uma misturou os caracteres de um texto para criar um espécime de livro. Este texto não só sobreviveu 5 séculos, mas 
+                        também o salto para a tipografia electrónica, mantendo-se essencialmente inalterada.
+                    </p>
+                </div>
+            </div> 
+            <div class="containerParallax"><!--Imagem-->
+                <div class="imgParallax">
+                    <img src="img/img4.jpg" alt="img4">
+                </div>
+            </div>           
+        </section>
+    </main>
+
+
+    <footer>
+        <center>
+            <h4>Fim da Página</h4>
+        </center>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="js/parallax.js"></script>
+    <script src="js/onaPage.js"></script>
+</body>
+</html>

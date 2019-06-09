@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    line-height: 26px;
+}
+
+/*========================= Formatação do header  =========================*/
+header{
+    height: 120px;
+    width: 100%;
+    background: #845EC2;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    font-size: 1em;
+    z-index: 1;  
+    transition: all .3s;
+}
+
+.headerFixo{ /*usado com interação jquery*/
+    font-size: 0.7em;
+    height: 60px;
+}
+
+header h1{
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0px 40px;
+    text-align: center;
+}
+
+/*========================= End - Formatação do header  =========================*/
+/*========================= Formatação dos botoes <nav>  =========================*/
+nav {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 2
+}
+
+nav .menu{
+    background-color: #B39CD0;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    height: 50px;
+    line-height: 60px;
+    text-align: center;
+    width: 50px;
+}
+
+.nav-itens{
+    position: absolute;
+    top: -210px;
+    right: 6px;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.nav-itens a {
+    display: block;
+    margin: 10px 0;
+    color: #fff;
+    background-color: #B39CD0;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.nav-show{ /*classe inserida com jquery*/
+    opacity: 1;
+}
+
+.txt_tooltip{
+    background: rgb(90,  88, 88);
+    width: 120px;
+    text-decoration: none;
+    padding: 0px 5px;
+    position: absolute;
+    right: 60px;
+    height: 25px;
+    margin-top: 15px;
+    opacity: 0;
+    transition: all .2s;
+}
+
+.txt_tooltip:after{
+    content: "";
+    border-top: 0px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid rgb(90, 88, 88);
+    position: absolute;
+    right: -10px;
+    top: 0px;
+}
+
+/*========================= Fim da Formatação dos botoes <nav>  =========================*/
+/*========================= Formatação do <main>  =========================*/
+main{
+    padding-top: 120px;
+}
+
+/*========================= Formatação do secao_info  =========================*/
+.secao_info{
+    padding: 60px 60px;
+}
+
+h3.headers{
+    font-size: 1.8em;
+    color: #494949;
+	text-transform: uppercase;
+	margin: 20px 0; 
+}
+
+
+.containerParallax{
+    position: relative;
+    overflow: hidden;
+    height: 200px;
+}
+
+.imgParallax{
+    position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	z-index:-1;
+}
+
+.imgParallax img{
+    display:none;
+	position:absolute;
+	left:50%;
+	bottom:0;
+	min-width:100%;
+	min-height:100%;
+	transform:translateX(-50%);
+}
+
+footer{
+    background: #845EC2;
+    padding: 22px 0px;
+    text-align: center;
+    color: #fff;
+}
